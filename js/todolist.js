@@ -11,11 +11,11 @@ window.template = function(id){
 };
 
 App.Models.Task = Backbone.Model.extend({
-	/*not working, set=> {validation:true} also not working*/
+/
 		validate : function(attrs){   
 		if( !attrs.title || !$.trim(attrs.title)){
 			throw new ReferenceError('Put a valid title!');
-			return 'A task requires value!';//return string from validate = not validatet, zostawia
+			
 		} 
 	}
 
