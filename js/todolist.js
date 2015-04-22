@@ -15,7 +15,6 @@ App.Models.Task = Backbone.Model.extend({
 		validate : function(attrs){   
 		if( !attrs.title || !$.trim(attrs.title)){
 			throw new ReferenceError('Put a valid title!');
-			
 		} 
 	}
 
