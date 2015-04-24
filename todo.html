@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+</head>
+<body>
+    <h1>My Tasks</h1>
+
+    <form id="addTask" action="">
+        <input type="text" placeholder="Your new task">
+        <input type="submit" value="Add task">
+    </form>
+
+    <div class="tasks">
+        <script id="taskTemplate" type="text/template">
+            <span> <%= title %> </span>
+            <button class="edit">EDIT</button>
+            <button class="delete">DELETE</button>
+        </script>
+    </div>
+
+    <script src="js/underscore.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/todolist.js"></script>
+</body>
+</html>
